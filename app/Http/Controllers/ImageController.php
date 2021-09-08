@@ -165,6 +165,8 @@ class ImageController extends Controller
 
         
 
+        // delete file and save again
+        Storage::delete($file_full_path);
         $image->save($file_full_path);
 
         

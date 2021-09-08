@@ -87,7 +87,7 @@
                                             <button class="btn btn-primary btn-block add-value-btn">30% OFF</button>
                                         </div>
                                         <div class="col-2">
-                                            <button class="btn btn-primary btn-block add-value-btn">Custom</button>
+                                            <button class="btn btn-primary btn-block add-value-btn" disabled="disabled">Custom</button>
                                         </div>
                                     </div>
                                 </div>

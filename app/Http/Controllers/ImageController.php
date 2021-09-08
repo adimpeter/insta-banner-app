@@ -50,7 +50,6 @@ class ImageController extends Controller
         
 
         $image = Image::make($file_full_path);
-        \Log::debug(['debug' => $image]);
 
         // for white rectangle border
         $image->rectangle(25, 25, 625, 625, function ($draw) {
@@ -166,7 +165,11 @@ class ImageController extends Controller
         
 
         // delete file and save again
-        Storage::delete($file_full_path);
+        if(\File::exists($file_full_path)){
+            // \Log::debug('file found');
+            \File::delete($file_full_path);
+        }
+
         $image->save($file_full_path);
 
         

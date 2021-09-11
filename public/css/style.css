@@ -134,6 +134,7 @@ body {
   background-color: #333;
   color: #fff;
   padding: 5px 20px;
+  padding-right: 40px;
   display: flex;
   align-items: center;
   font-size: 20px;
@@ -144,6 +145,7 @@ body {
   bottom: 50px;
   right: 0px;
   padding: 5px 10px;
+  padding-right: 40px;
   background-color: #fff;
   display: flex;
   align-items: center;

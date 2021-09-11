@@ -54,6 +54,7 @@ $(document).ready(function(){
         var instagramHandle = $('.insta-handle-banner').text();
         var promo = $('.discount-inner-banner').text();
         var productText = $('#productTextInput').val();
+        var imageData = $('#imageData').val();
 
         $('.process-overlay').removeClass('hide');
         $('.loading').removeClass('hide');
@@ -84,7 +85,8 @@ $(document).ready(function(){
                 discount: discount,
                 promo: promo,
                 instagram_handle: instagramHandle,
-                product_text: productText
+                product_text: productText,
+                image_id: imageData
              },
             success: function(data){
                 var bannerDownLoadPath = data.downloadPath;
@@ -140,6 +142,7 @@ $(document).ready(function(){
                 fullImagePath = data.filepath + data.filename;
                 $('#pic-display-container img').attr('src', `${fullImagePath}`);
                 $('#filename').val(data.filename);
+                $('#imageData').val(data._img_data);
                 $('.downloadbanner').addClass('hide');
                 console.log(fullImagePath);
             }

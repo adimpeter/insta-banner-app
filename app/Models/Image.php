@@ -11,6 +11,7 @@ class Image extends Model
 
     protected $fillable = [
         'name',
+        'original_img_name',
         'ip'
     ];
 }

@@ -184,6 +184,52 @@ input {
   display: none;
 }
 
+#uploadBarContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#uploadBarContainer #uploadStatus {
+  width: 100px;
+  margin-left: auto;
+  text-align: right;
+  font-size: 12px;
+}
+
+#uploadBar {
+  height: 10px;
+  width: 0%;
+  background-color: #5a189a;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.google-ad-banner-side {
+  height: 100vh;
+}
+
+.google-ad-banner-top {
+  max-height: 100px;
+  width: 100%;
+}
+
+.site-title {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #5a189a;
+}
+
+.site-title span {
+  color: #c77dff;
+}
+
+.site-title p {
+  font-size: 16px;
+  color: #333;
+  font-weight: lighter;
+}
+
 @media (max-width: 450px) {
   #app-container {
     flex-direction: column;
@@ -196,4 +242,15 @@ input {
   #app-controls-container {
     background-color: #fff;
   }
+
+  .google-ad-banner-side {
+    height: 100px;
+  }
+}
+.custom-discount {
+  margin-top: 5px;
+}
+
+#customDiscountInput {
+  border-radius: 50px 0px 0px 50px !important;
 }

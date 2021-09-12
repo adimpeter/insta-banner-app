@@ -25,6 +25,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     @include('snipps.analytics')
+    @include('snipps.adsense')
 </head>
 <body>
     <div id="app">

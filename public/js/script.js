@@ -31,7 +31,11 @@ $(document).ready(function(){
         promoOptionsDisplay.removeClass('show-element');
     });
 
-    $('.discount-options-display button').on('click', function(){
+    $('.discount-options-display > button').on('click', function(){
+        discountOptionsDisplay.removeClass('show-element');
+    });
+
+    $('.add-value-btn').on('click', function(){
         discountOptionsDisplay.removeClass('show-element');
     });
 
@@ -44,6 +48,7 @@ $(document).ready(function(){
             $('.insta-handle-banner').text('@' + $(this).val());
         }
     });
+    
 
     $('#productTextInput').on('keyup', function(){
         var input           = $(this).val();
@@ -100,6 +105,7 @@ $(document).ready(function(){
                     if (evt.lengthComputable) {
                         var percentComplete = (evt.loaded / evt.total) * 100;
                         //Do something with upload progress here
+                        
                     }
                }, false);
                return xhr;
@@ -142,6 +148,11 @@ $(document).ready(function(){
         var form = $("#uploadImageForm");
         var formData = new FormData(form[0]);
 
+        $('#uploadBar').css({
+            'width' : 0 + '%'
+        });
+        $('#uploadStatus').text();
+
         $.ajaxSetup({
             headers: {
               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -155,6 +166,14 @@ $(document).ready(function(){
                     if (evt.lengthComputable) {
                         var percentComplete = (evt.loaded / evt.total) * 100;
                         //Do something with upload progress here
+
+                        $('#uploadBar').css({
+                            'width' : percentComplete + '%'
+                        });
+
+                        $('#uploadStatus').text('Uploading...' + Math.round(percentComplete) + '%');
+
+                        console.log(percentComplete);
                     }
                }, false);
                return xhr;
@@ -180,5 +199,18 @@ $(document).ready(function(){
     $('.add-value-btn').on('click', function(){
         var value = $(this).text();
         $('.discount-inner-banner').text(value);
-    })
+    });
+
+    $('#customDiscountInput').on('keyup', function(){
+        if($(this).val().length > 3){
+            return;
+        }
+        var discountText = $(this).val() + '% OFF';
+        $('.discount-inner-banner').text(discountText);
+    });
+
+    $('.custom-discount-btn').on('click', function(e){
+        e.preventDefault();
+        $('.custom-discount').toggleClass('hide');
+    });
 });

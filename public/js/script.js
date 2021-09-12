@@ -100,6 +100,7 @@ $(document).ready(function(){
                     if (evt.lengthComputable) {
                         var percentComplete = (evt.loaded / evt.total) * 100;
                         //Do something with upload progress here
+                        
                     }
                }, false);
                return xhr;
@@ -142,6 +143,11 @@ $(document).ready(function(){
         var form = $("#uploadImageForm");
         var formData = new FormData(form[0]);
 
+        $('#uploadBar').css({
+            'width' : 0 + '%'
+        });
+        $('#uploadStatus').text();
+
         $.ajaxSetup({
             headers: {
               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -155,6 +161,14 @@ $(document).ready(function(){
                     if (evt.lengthComputable) {
                         var percentComplete = (evt.loaded / evt.total) * 100;
                         //Do something with upload progress here
+
+                        $('#uploadBar').css({
+                            'width' : percentComplete + '%'
+                        });
+
+                        $('#uploadStatus').text('Uploading...' + Math.round(percentComplete) + '%');
+
+                        console.log(percentComplete);
                     }
                }, false);
                return xhr;

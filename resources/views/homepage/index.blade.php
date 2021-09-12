@@ -105,6 +105,10 @@
                                 </div>
 
                                 <div class="col-12">
+                                    <div id="uploadBarContainer">
+                                        <div id="uploadBar"></div>
+                                        <div id="uploadStatus"></div>
+                                    </div>
                                     <form action="{{ route('upload.image') }}" method="post" encttype="multipart/form-data" id="uploadImageForm">
                                         <div class="input-group mb-3">
                                             <input type="file" class="form-control" id="imageInput" name="image" accept="image/*">

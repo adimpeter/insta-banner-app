@@ -211,6 +211,27 @@ input {
     display: none;
 }
 
+#uploadBarContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#uploadBarContainer #uploadStatus {
+    width: 100px;
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+}
+
+#uploadBar {
+    height: 10px;
+    width: 0%;
+    background-color: $primaryColor;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
 
 @media(max-width: 450px){
     #app-container {

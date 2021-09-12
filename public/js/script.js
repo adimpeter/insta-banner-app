@@ -31,7 +31,11 @@ $(document).ready(function(){
         promoOptionsDisplay.removeClass('show-element');
     });
 
-    $('.discount-options-display button').on('click', function(){
+    $('.discount-options-display > button').on('click', function(){
+        discountOptionsDisplay.removeClass('show-element');
+    });
+
+    $('.add-value-btn').on('click', function(){
         discountOptionsDisplay.removeClass('show-element');
     });
 
@@ -44,6 +48,7 @@ $(document).ready(function(){
             $('.insta-handle-banner').text('@' + $(this).val());
         }
     });
+    
 
     $('#productTextInput').on('keyup', function(){
         var input           = $(this).val();
@@ -194,5 +199,18 @@ $(document).ready(function(){
     $('.add-value-btn').on('click', function(){
         var value = $(this).text();
         $('.discount-inner-banner').text(value);
-    })
+    });
+
+    $('#customDiscountInput').on('keyup', function(){
+        if($(this).val().length > 3){
+            return;
+        }
+        var discountText = $(this).val() + '% OFF';
+        $('.discount-inner-banner').text(discountText);
+    });
+
+    $('.custom-discount-btn').on('click', function(e){
+        e.preventDefault();
+        $('.custom-discount').toggleClass('hide');
+    });
 });

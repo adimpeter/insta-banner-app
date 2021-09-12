@@ -204,6 +204,7 @@ body {
 input {
     border-radius: 50px !important;
 }
+
 .show-element {
     display: block;
 }
@@ -223,6 +224,8 @@ input {
     font-size: 12px;
 }
 
+
+
 #uploadBar {
     height: 10px;
     width: 0%;
@@ -230,6 +233,29 @@ input {
     border-radius: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
+}
+
+
+.google-ad-banner-side {
+    height: 100vh;
+}
+.google-ad-banner-top {
+    max-height: 100px;
+    width: 100%;
+}
+
+.site-title {
+    margin-top: 20px;
+    font-size: 25px;
+    color: $primaryColor;
+}
+.site-title span {
+    color: $secondaryColor;
+}
+.site-title p {
+    font-size: 16px;
+    color: #333;
+    font-weight: lighter;
 }
 
 
@@ -245,4 +271,15 @@ input {
     #app-controls-container {
         background-color: #fff;
     }
+
+    .google-ad-banner-side {
+        height: 100px;
+    }
+}
+
+.custom-discount {
+    margin-top: 5px;
+}
+#customDiscountInput {
+    border-radius: 50px 0px 0px 50px !important;
 }

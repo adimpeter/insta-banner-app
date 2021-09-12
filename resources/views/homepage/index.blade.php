@@ -20,8 +20,8 @@
                         <div class="inner-border"></div>
                         <div class="banner-text-container">
                             <p>
-                                <span>CHILDRENS</span>
-                                <span class="banner-text-primary">CLOTHINGS</span>
+                                <span>PRODUCT TEXT</span>
+                                <span class="banner-text-primary">HERE</span>
                             </p>
                         </div>
                         <img src="" alt="instagram-banner-display">
@@ -117,6 +117,7 @@
                                     <div class="form-group">
                                         <input type="text" name="" id="instagramHandleInput" class="form-control" placeholder="@instagramhandle">
                                         <input type="hidden" id="filename">
+                                        <input type="hidden" id="imageData">
                                     </div>
                                 </div>
 

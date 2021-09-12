@@ -63,7 +63,7 @@ class ImageController extends Controller
         $file_banner_full_path      = $file_banner_dir . $file_banner_name;
         $padding                    = 20;
 
-        $product_text               = $request->product_text;
+        $product_text               = strtoupper($request->product_text);
         $promo_text                 = $request->promo;
 
         $image_id                   = base64_decode($request->image_id);

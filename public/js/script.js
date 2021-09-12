@@ -2,14 +2,41 @@ $(document).ready(function(){
     var promoOptionsDisplay = $('.promo-options-display');
     var discountOptionsDisplay = $('.discount-options-display');
 
+    var screenWidth = $(window).width();
+    var mobileWidth = 450;
+
+    if(screenWidth <= mobileWidth){
+        var scaleDownByPercentage = (screenWidth / mobileWidth);
+        $('#pic-display-container').css({
+            'transform-origin' : 'top left',
+            '-moz-transform' : `scale(${scaleDownByPercentage})`,
+            'transform' : `scale(${scaleDownByPercentage})`,
+            'margin' : 'unset'
+        });
+
+        // $('#pic-display-container').css({
+        //     'height' : $('#pic-display-container').innerWidth() + 'px'
+        // });
+    }
+
     $('.promo-add-btn').on('click', function(){
         promoOptionsDisplay.toggleClass('show-element');
         discountOptionsDisplay.removeClass('show-element');
     });
 
+    
+
     $('.discount-add-btn').on('click', function(){
         discountOptionsDisplay.toggleClass('show-element');
         promoOptionsDisplay.removeClass('show-element');
+    });
+
+    $('.discount-options-display button').on('click', function(){
+        discountOptionsDisplay.removeClass('show-element');
+    });
+
+    $('.promo-options-display button').on('click', function(){
+        promoOptionsDisplay.toggleClass('show-element');
     });
 
     $('#instagramHandleInput').on('keyup', function(e){
@@ -31,7 +58,7 @@ $(document).ready(function(){
             $(this).val(input.slice(0, -1));
         }
 
-        var text= $(this).val();
+        var text= $(this).val().toUpperCase();
         var textArray = text.split(' ');
         var editedtext = ``;
 

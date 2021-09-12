@@ -210,3 +210,18 @@ input {
 .hide {
     display: none;
 }
+
+
+@media(max-width: 450px){
+    #app-container {
+        flex-direction: column;
+    }
+
+    #pic-display-container {
+        margin-bottom: 40px;
+    }
+
+    #app-controls-container {
+        background-color: #fff;
+    }
+}

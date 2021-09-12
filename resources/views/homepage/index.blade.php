@@ -41,11 +41,11 @@
                     <div id="app-controls-container">
                         <div class="top">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-6 col-md-6 col-lg-3">
                                     <button class="btn btn-primary btn-block promo-add-btn">Promo</button>
                                 </div>
 
-                                <div class="col-4 offset-5">
+                                <div class="col-6 col-lg-4 offset-lg-5">
                                     <button class="btn btn-primary btn-block discount-add-btn">Discount</button>
                                 </div>
 
@@ -54,7 +54,7 @@
 
                                 <div class="col-12 promo-options-display">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn">Giveaway</button>
                                         </div>
                                         <!-- <div class="col-3">
@@ -71,22 +71,22 @@
 
                                 <div class="col-12 discount-options-display">
                                     <div class="row">
-                                        <div class="col-2">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn">10% OFF</button>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn">15% OFF</button>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn">20% OFF</button>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn">25% OFF</button>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn">30% OFF</button>
                                         </div>
-                                        <div class="col-2">
+                                        <div class="col-6 col-lg-2">
                                             <button class="btn btn-primary btn-block add-value-btn" disabled="disabled">Custom</button>
                                         </div>
                                     </div>

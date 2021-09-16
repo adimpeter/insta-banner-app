@@ -173,7 +173,9 @@ class ImageController extends Controller
         $text_color = "#fff";
 
         // if word is more than one, calculate where word should start
-        $yAxis = $banner_height / count($product_text_array);
+        $text_count = (count($product_text_array) == 1)? 2 : count($product_text_array);
+        $yAxis = $banner_height / $text_count;
+
 
         foreach($product_text_array as $text){
             // product text

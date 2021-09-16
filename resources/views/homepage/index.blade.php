@@ -141,7 +141,7 @@
                                             </div>
                                             <form action="{{ route('upload.image') }}" method="post" encttype="multipart/form-data" id="uploadImageForm">
                                                 <div class="input-group mb-3">
-                                                    <input type="file" class="form-control" id="imageInput" name="image" accept="image/*">
+                                                    <input type="file" class="form-control" required="required" id="imageInput" name="image" accept="image/*">
                                                 </div>
                                                 <button class="hide">submit</button>
                                             </form>

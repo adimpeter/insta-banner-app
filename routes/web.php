@@ -18,6 +18,10 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('homepage');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
+Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
+
 
 Route::middleware('auth')->group(function(){
     Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.home');

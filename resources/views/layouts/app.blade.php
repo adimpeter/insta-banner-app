@@ -29,7 +29,44 @@
 </head>
 <body>
     <div id="app">
+        <header>
+
+            <div class="container">
+                <div class="logo"><a href="/">QuickInstaBanner</a></div>
+                <!-- <nav>
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                    </form>
+                </nav> -->
+            </div>
+        </header>
         @yield('content')
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    &copy quickinstabanner.com {{ date('Y') }}. All Rights Reserved.
+                    </div>
+
+                    <div class="col-md-6 offset-md-2">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="{{ route('about') }}">About Us</a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="{{ route('terms') }}">Terms of Use</a>
+                            </div>
+                            <div class="col-md-4">
+                            <a href="{{ route('privacy') }}">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

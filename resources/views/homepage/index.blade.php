@@ -11,26 +11,26 @@
     <a href="#" class="btn btn-primary downloadbanner close-overlay"  download>Download Banner</a>
 </div>
 
-<section>
-    <div class="container-fluid">
+<section class="section">
+    <div class="container">
         <div class="row">
-            <div class="col-md-2 google-ad-banner-side">
+            <!-- <div class="col-md-2 google-ad-banner-side">
 
-            </div>
+            </div> -->
 
 
-            <div class="col-md-8">
+            <div class="col-md-12">
 
                 <div class="row">
 
-                    <div class="col-md-12 google-ad-banner-top">
+                    <!-- <div class="col-md-12 google-ad-banner-top">
 
                     </div>
 
                     <div class="col-md-12 site-title">
                         QUICK<span>INSTA</span>BANNER
                         <p>Create instagram sales banners quick and easy!.</p>
-                    </div>
+                    </div> -->
 
 
                     <div class="col-md-12">
@@ -210,11 +210,69 @@
             </div>
 
 
-            <div class="col-md-2 google-ad-banner-side">
+            <!-- <div class="col-md-2 google-ad-banner-side">
 
-            </div>
+            </div> -->
 
             
+        </div>
+    </div>
+</section>
+
+
+<section class="section section-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h2>Make Instagram Banners Quickly</h2>
+                <p class="text-font">
+                    With quickinstabanner.com, you dont need some mad graphics skill to get started.
+                    Simply upload your image, select the required fields and Vola! Your Banner is Ready.
+                    It's That simple.
+                </p>
+                
+            </div>
+
+            <div class="col-md-6">
+                <div>
+                <img src="{{ asset('assets/insta-banner-asset-examples.png') }}" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                <h2>Perfect Fit</h2>
+                <p class="text-font">
+                    Our Banners are 650 x 650, the perfect fit for Instagram
+                </p>
+                
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>Easy To Use</h2>
+                <p class="text-font">
+                    You dont have to be an expert to use quickinstabanner.com. Anyone can get a banner in seconds.
+                </p>
+                
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>Easy Download</h2>
+                <p class="text-font">
+                    No registration required, No limitations on downloads.
+                </p>
+                
+            </div>
         </div>
     </div>
 </section>
